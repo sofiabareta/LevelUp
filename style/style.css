@@ -1,0 +1,344 @@
+html,body{
+	height: 100%;
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #000000 0%, #140908 69%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(69%,#140908)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 0%,#140908 69%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000000 0%,#140908 69%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000000 0%,#140908 69%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 0%,#140908 69%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#140908',GradientType=0 ); /* IE6-9 */
+	z-index: -99999;
+	position: relative;
+
+}
+body p{
+	color: #ffe4a9;
+	text-align: justify;
+	font-size: 14px;	
+	padding: 5px 0; 
+}
+body h3{
+	color: #f9a719;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 10px;
+}
+.modal_mudanca {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modal_mudanca:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal_mudanca > div {
+	width: 60%;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px;
+	background: #140908;
+}
+.modal_mudanca li {
+display: inline-block;
+max-width: 28%;
+vertical-align: top;
+padding-top: 20px;
+}
+
+.modal2 {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modal2:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal2 > div {
+	width: 60%;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px;
+	background: #140908;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 60%;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px;
+	background: #140908;
+}
+.close {
+	background: #606061;
+	color: #f9a719;
+	line-height: 25px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: -20px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.yellow{
+	color: #f9a719;
+}
+.container{
+	max-width: 60%;
+	margin: 0 auto;
+	/*max-height: 60%;  */
+}
+header{
+	background: url(../img/header/header_menu.jpg) center;
+	height: 31px;
+	position: relative;
+}
+
+#home{
+	background: url(../img/home/bg_home.jpg) no-repeat center center/100% 100%;
+	height: 507px;
+	position: relative;
+	z-index: -2
+}
+.batalha_description {
+	max-width: 60%;
+	padding: 27% 7%;
+	float: left;
+}
+.batalha_description h1{
+	text-align: left;
+	padding-bottom: 10px; 	
+}
+.batalha_description p{
+	text-align: justify;
+	color: #ffe4a9;
+	font-size: 14px;
+}
+.batalha_description a{
+	float: left;
+	padding-top: 10px;
+	color: #f9a719;
+}
+
+#main{
+	background: url(../img/main/bg_main.png) no-repeat center center/100% 100%;
+	height: 507px;
+	position: relative;
+	margin-top: -8%;
+	z-index: 0;
+}
+#main .menu{
+	position: relative;
+	z-index: 1;
+}
+#main .menu li{
+	width: 100px;
+	text-indent: -9999px;
+	height: 65px;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+}
+#main .content{
+	position: relative;
+	display: inline-block;
+}
+#main img{
+	zoom:70%;
+}
+#main .content .cont_montarias, .cont_mudanca{
+	float: left;
+	margin-top: -20%;
+}
+#main .cont_fatality{
+	float: left;
+	margin-top: -20%;
+}
+#main .cont_fatality figure:first-child{
+	float: left;
+	margin-top: -15%;
+}
+#main .cont_fatality p{
+	text-align: justify;
+	padding: 0 10% 2% 0;
+	color: #ffe4a9;
+}
+#main .cont_viuva{
+	float: left;
+	margin-top: -20%;
+}
+#main .content .cont_viuva .cont_description{
+	max-width: 66%;
+	height: 260px;
+	float: right;
+	overflow-y: auto;
+}
+#main .cont_viuva .cont_description .article_icon figure{
+	float: left;
+	padding-right: 16px;
+}
+#main .cont_viuva .cont_description p{	
+	text-align: justify;
+	padding:0 10px 10px;
+}
+#main .cont_fortaleza{
+	margin-top: -20%;
+	float: left;
+}
+#main .cont_mudanca .cont_description p{
+	float: right;
+}
+#main .cont_mudanca figure{
+	margin-top: -6%;
+}
+#main .cont_mudanca .cont_description figure img{
+	zoom: 85%;
+}
+#main .content .cont_fortaleza .side_img{
+	margin-top: -10%;
+}
+#main .content .side_img{
+	float: left;
+	position: absolute;
+	max-width: 40%;
+} 
+#main .content .cont_description{
+	float: right;
+	max-width: 60%;
+}
+#main .content .cont_fortaleza .article_img figure{
+	float: right;
+
+}
+
+#main .menu .fatality{
+	left: 37%;
+}
+#main .menu .viuva{
+	left: 45%;
+}
+#main .menu .fortaleza{
+	left: 53%;
+}
+#main .menu .mudanca{
+	left: 61%;
+}
+#main .menu .montarias{
+	left: 69%;
+}
+.space{
+	background: #140908;
+	height:130px;
+	margin-top: -10%;
+	position: relative;
+	z-index: -3;
+}
+
+#update{
+	background: #140908;
+}
+#update p{
+	text-align: justify; 
+}
+#update .batalha_dominio{
+	float: left;
+	margin-top: 5%;
+	display: inline-block;	
+}
+#update .batalha_dominio img{
+	float: right;
+	margin: 0 0 10px 20px;
+}
+#update .batalha_dominio a, .news_box a{
+	float: left;
+	padding: 10px 0;
+}
+#update .wrapper{
+	display: inline-block;
+	margin-top: 5%; 
+}
+#update .wrapper .news_box{
+	display: inline-block;
+	max-width: 28%;
+	text-align: justify;
+	vertical-align: top;
+}
+.middle{
+	margin: 0 7%;
+}
+#update .wrapper .news_box.middle h3{
+	font-size: 13px;
+}
+#update .banner{
+	margin: 100px 0 50px;
+}
+
+footer{
+	background: url(../img/footer/bg_footer.jpg) no-repeat center;
+	height: 135px;
+	position: relative;
+}
+footer .share{
+	background: url(../img/footer/share.png) no-repeat center;
+	width: 100%;
+	height: 63px;
+	position: absolute;
+	bottom: 0;
+}
+footer ul{
+	position: absolute;
+	left: 24%;
+	width: 120px;
+	bottom: 0;
+}
+footer ul li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
